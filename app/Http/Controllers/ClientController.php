@@ -15,7 +15,8 @@ class ClientController extends Controller
     public function index()
     {
         //
-        return Client::all();
+        return Client::with('reservations')->get();
+
     }
 
     /**
@@ -48,7 +49,8 @@ class ClientController extends Controller
     public function show($id)
     {
         //        
-        return Client::find($id);
+         return Client::with('reservations')->find($id);
+
     }
 
     /**
