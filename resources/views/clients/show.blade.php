@@ -23,6 +23,9 @@
                 <td>
                     Phone_number
                 </td>
+                <td>
+                    Actions
+                </td>
             </tr>
 
         </thead>
@@ -42,6 +45,9 @@
                 </td>
                 <td>
                     {{$client->phone_number}}
+                </td>
+                <td>
+                    <a href="{{url(('clients/update/'.$client->id)) }}">Editar</a>
                 </td>
             </tr>
 
