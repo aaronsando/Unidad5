@@ -23,6 +23,7 @@
         <label>Phone</label>
         <input type="" name="phone_number" placeholder="612xxxx" value="{{$client->phone_number}}">
         <br><hr>
+        <input type="hidden" name="id" value="{{$client->id}}">
 
         <button type="submit">Enviar</button>
 
