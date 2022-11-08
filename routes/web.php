@@ -49,6 +49,14 @@ Route::post('suma/', function(Request $request){
 
 });
 
+Route::get('/login', function(){
+    return view ('login');
+})->name('login');
+
+Route::get('/profile', function () {
+    return "HOLA";
+})->middleware('auth');
+
 Route::get('users/', [UserController::class, 'index']);
 Route::get('users/create', [UserController::class, 'create']);
 Route::get('users/{id}', [UserController::class, 'show']);

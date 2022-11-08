@@ -17,7 +17,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             ClientSeeder::class,
-            ReservationSeeder::class
+            ReservationSeeder::class,
+            UserSeeder::class
         ]);
 
         // \App\Models\User::factory(10)->create();
